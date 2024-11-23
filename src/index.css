@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'a4';
+  src: url('./assets/Fonts/a4.woff2');
+}
+@font-face {
+  font-family: 'u4';
+  src: url('./assets/Fonts/u4.woff2');
+}
+@font-face {
+  font-family: 'u7';
+  src: url('./assets/Fonts/u7.woff2');
+}
+
+@font-face {
+  font-family: 'u8';
+  src: url('./assets/Fonts/u8.woff2');
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+span{
+  display: inline-block;
+}
+
+ .swap {
+    position: relative;
+    overflow: hidden;
+    height: 1em; /* Adjust height based on font size */
+}
+
+  .swap span {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    white-space: nowrap;
+  }
+
+  .swap .new-text {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    white-space: nowrap;
+  }
+
+  h1:hover .current-text {
+    transform: translateY(-100%);
+  }
+
+  h1:hover .new-text {
+    transform: translateY(-100%);
+  }
+  
